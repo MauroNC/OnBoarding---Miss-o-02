@@ -4,14 +4,9 @@ import cv2
 
 # Capturar imagem da webcam
 cap = cv2.VideoCapture(0)
-if not cap.isOpened():
-    print("Erro ao abrir a webcam.")
-else:
+if cap.isOpened():
     while True:
         ret, frame = cap.read()
-        if not ret:
-            print("Erro ao capturar a imagem da webcam.")
-            break
 
         # Exibir a imagem da webcam
         cv2.imshow('Imagem da Webcam', frame)
