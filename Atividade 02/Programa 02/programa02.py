@@ -24,7 +24,7 @@ resultado = img_atual.copy()
 for contorno in contornos:
     x, y, w, h = cv2.boundingRect(contorno)
     # Definir um tamanho mínimo para considerar um contorno como um possível intruso
-    if w > 50 and h > 50:  # Exemplo: ajustar o tamanho conforme necessário
+    if w > 50 and h > 50:  
         cv2.rectangle(resultado, (x, y), (x+w, y+h), (0, 255, 0), 2)
         cv2.putText(resultado, "Intruso!", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (0, 255, 0), 2)
 
