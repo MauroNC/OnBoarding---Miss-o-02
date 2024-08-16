@@ -2,7 +2,9 @@ import cv2
 
 # Carregar as imagens
 img_referencia = cv2.imread('D:\seubi\Documents\RAS\OnBoarding_Missao_02\Atividade 02\Imagens - Atividade 02\Tarefa-02\porta1.jpg')
-img_atual = cv2.imread('D:\seubi\Documents\RAS\OnBoarding_Missao_02\Atividade 02\Imagens - Atividade 02\Tarefa-02\kirra1.jpg')
+#img_atual = cv2.imread('D:\seubi\Documents\RAS\OnBoarding_Missao_02\Atividade 02\Imagens - Atividade 02\Tarefa-02\kirra1.jpg')
+img_atual = cv2.imread('D:\seubi\Documents\RAS\OnBoarding_Missao_02\Atividade 02\Imagens - Atividade 02\Tarefa-02\larapio.jpg')
+
 
 # Subtração de fundo
 diferenca = cv2.absdiff(img_atual, img_referencia)
